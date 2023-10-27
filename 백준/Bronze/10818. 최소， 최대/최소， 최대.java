@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		int arr[] = new int[n];		
+		int min = 0;
+		
+		for(int i = 0; i < arr.length; i++) {
+			int number = sc.nextInt();
+			arr[i] += number;
+		}
+		
+		Arrays.sort(arr);
+		
+
+		System.out.println(arr[0] + " " + arr[arr.length-1]);
+
+	}
+
+}
